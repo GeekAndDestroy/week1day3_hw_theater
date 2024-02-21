@@ -6,7 +6,7 @@
     min-height: 100vh;
     display: grid;
     grid-template-columns: 20vw 1fr 20vw;
-    grid-template-rows: 10vh 40vh 1fr 15vh;
+    grid-template-rows: 10vh 45vh 1fr 15vh;
     grid-template-areas: 
     "nav nav nav"
     "featured featured featured"
@@ -20,22 +20,34 @@
 
 .nav {
     grid-area: nav;
+    display: flex;
+
     background-color: black;
-    position: sticky;
-    top: 0;
-    color: antiquewhite;
+}
+
+.griot {
+    font-size: larger;
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav-links {
     height: 100%;
+    width: 50vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.nav-links > a {
+.nav a {
     color: white;
     text-decoration: none;
+}
+
+.nav-links a {
+    font-size: x-small;
 }
 
 .nav-links > a:hover {
