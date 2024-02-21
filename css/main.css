@@ -6,7 +6,7 @@
     min-height: 100vh;
     display: grid;
     grid-template-columns: 20vw 1fr 20vw;
-    grid-template-rows: 10vh 1fr 25vh;
+    grid-template-rows: 10vh 40vh 1fr 15vh;
     grid-template-areas: 
     "nav nav nav"
     "featured featured featured"
@@ -26,8 +26,35 @@
     color: antiquewhite;
 }
 
+.nav-links {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links > a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links > a:hover {
+    text-decoration: underline;
+}
+
+
 .featured {
     grid-area: featured;
+    background-color: black;
+    background-image: url("../images/featured.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .show-cards {
