@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 20vw 1fr 20vw;
+    grid-template-rows: 10vh 1fr 25vh;
+    grid-template-areas: 
+    "nav nav nav"
+    "featured featured featured"
+    ". shows ."
+    "footer footer footer";
+}
+
+.area-border {
+    border: 2px solid black;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    color: antiquewhite;
+}
+
+.featured {
+    grid-area: featured;
+}
+
+.show-cards {
+    grid-area: shows;
+}
+
+.footer {
+    grid-area: footer;
+}
