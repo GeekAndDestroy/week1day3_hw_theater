@@ -6,7 +6,7 @@
     min-height: 100vh;
     display: grid;
     grid-template-columns: 20vw 1fr 20vw;
-    grid-template-rows: 10vh 45vh 1fr 15vh;
+    grid-template-rows: 10vh 45vh 1fr 40vh;
     grid-template-areas: 
     "nav nav nav"
     "featured featured featured"
@@ -122,6 +122,38 @@ button {
     padding: 1em;
 }
 
+button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(246, 41, 41);
+    border: 1px solid gray;
+    padding: 1em;
+}
+
 .footer {
     grid-area: footer;
+    display: flex;
+    margin-top: 20px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mapcontainer {
+    height: 100%;
+    width: 40%;
+   
+}
+
+.footmap {
+    width: 50%;
+}
+
+.footinfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    justify-content: space-between;
 }
